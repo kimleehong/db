@@ -1,0 +1,144 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>무제 문서</title>
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&display=swap" rel="stylesheet">
+	<style>
+		
+		:root {
+			--font-family-regul: 'Noto Sans KR', sans-serif;
+			--font-family-Ral: "Raleway",sans-serif;
+			--PoppinsSemi: "PoppinsSemi",sans-serif;
+			--wp--color--pumser--orange: #e24320;
+			--orange: #e24320;
+			--navy: #2a3241;
+			--normal--text--color: #333;
+			--white: #fff;
+			--gray: #c5c5c5;
+			--text--gray: #020202;
+			--navy: #2a3241;
+			--action--menu--height: 64px;
+		}
+
+		body {
+			width: 100%;
+			height: 100%;
+			font-family: var(--font-family-regul);
+		}
+		
+		body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, textarea, p, blockquote, th, td, input, select, textarea, button, a, article, aside, canvas, details, embed, figure, figcaption, footer, header, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+		
+		p, a, span, strong, button, h2, h1, h3 {line-height: 140%;color: var(--normal--text--color);}
+		
+		section.top {
+			width: 100%;
+			display: flex;
+			height: 100vh;
+			flex-direction: row;
+			align-content: center;
+			justify-content: center;
+			text-align: center;
+			align-items: center;
+			max-width: 2000px;
+			margin: 0 auto;
+		}
+		
+		section.top .sub-title {
+			font-size: 3rem;
+			font-family: var(--PoppinsSemi);
+		}
+
+		section.top .title {
+			font-size: 8rem;;
+		}
+		
+		section.top .title strong { color: var(--wp--color--pumser--orange); }
+		
+		.fademove {
+			opacity: 0;
+			-webkit-transition: all .8s cubic-bezier(.3,.1,.3,1);
+			transition: all .8s cubic-bezier(.3,.1,.3,1);
+			-webkit-transform: translate3d(0,100px,0);
+			transform: translate3d(0,100px,0);
+			backface-visibility: hidden;
+			transition-delay: 10;
+		}
+		.fademove.is-visible{
+			opacity: 1;
+			-webkit-transform: translate3d(0,0,0);
+			transform: translate3d(0,0,0);
+		}
+	</style>
+</head>
+
+<body>
+
+	<section class="top">
+		<div class="tex-area">
+			<p class="sub-title show-on-scroll fademove">제품소개</p>
+			<p class="title show-on-scroll fademove">가스부스터<strong>.</strong></p>
+		</div>
+	</section>	
+
+	<script>
+		$(function(){
+	
+	scrollTransition();
+
+
+
+	// scrollTransition
+	function scrollTransition(){
+		var scroll = window.requestAnimationFrame ||
+		 // IE Fallback
+		 function(callback){ window.setTimeout(callback, 1000/60)};
+		 var elementsToShow = document.querySelectorAll('.show-on-scroll');
+		
+		function loop() {
+
+			Array.prototype.forEach.call(elementsToShow, function(element){
+			  if (isElementInViewport(element)) {
+				element.classList.add('is-visible');
+			  } else {
+				element.classList.remove('is-visible');
+			  }
+			});
+			
+			scroll(loop);
+		}
+		
+		// Call the loop for the first time
+		loop();	
+
+		// Helper function from: http://stackoverflow.com/a/7557433/274826
+		function isElementInViewport(el) {
+		  // special bonus for those using jQuery
+		  if (typeof jQuery === "function" && el instanceof jQuery) {
+			el = el[0];
+		  }
+		  var rect = el.getBoundingClientRect();
+		  return (
+			(rect.top <= 0
+			  && rect.bottom >= 0)
+			||
+			(rect.bottom >= (window.innerHeight || document.documentElement.clientHeight) &&
+			  rect.top <= (window.innerHeight || document.documentElement.clientHeight))
+			||
+			(rect.top >= 0 &&
+			  rect.bottom <= (window.innerHeight || document.documentElement.clientHeight))
+		  );
+		}
+
+	}
+	
+});
+	
+	</script>
+</body>
+</html>

@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>가스부스터</title>
+
+    <!-- 제이쿼리 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"
+        integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- 폰트어썸 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- 테일윈드 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css"
+        referrerpolicy="no-referrer" />
+
+
+    <!-- aos animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- 폰트 : noto sans kr -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+
+    <!-- 로컬 -->
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js" defer></script>
+
+
+</head>
+
+<body>
+
+    <div class="con-min-width">
+        <div class="con mx-auto">
+
+            <header class="flex">
+                <div class="logo flex-1">
+                    <img src="웹디자인/color-logo.png" alt="">
+                </div>
+                <div class="sm-menu flex-1">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+                <div class="language flex-1">
+                    <span class="kr">CN</span>
+                    <span class="kr">EN</span>
+                </div>
+            </header>
+
+            <section class="top">
+                <div class="tex-area">
+                    <p class="sub-title show-on-scroll fademove">제품소개</p>
+                    <p class="title show-on-scroll fademove">가스부스터<strong>.</strong></p>
+                </div>
+            </section>
+
+            <div class="mouse-motion">
+                <div class='scrollWrap'>
+                    <div class='scroll-icon ex-1'>
+                        <span class='wheel'></span>
+                    </div>
+                    <span>scroll</span>
+                </div>
+            </div>
+
+            <div class="menu-bar flex">
+                <div class="flex-1 flex justify-center items-center"><span>공기구동형</span></div>
+                <div class="flex-1 flex justify-center items-center"><span>모터형</span></div>
+                <div class="flex-1 flex justify-center items-center"><span>주문제작 시험설비</span></div>
+            </div>
+
+            <div class="product-list product-1">
+                <div class="title flex flex-col justify-center items-center" data-aos="fade-up"
+                    data-aos-duration="1000">
+                    <span class="en">STANDARD SERIES</span>
+                    <span class="ko">가스부스터 기본 시리즈</span>
+                </div>
+                <div class="product-1__section grid grid-cols-3 gap-4">
+                    <div>
+                        <div class="img-box flex">
+                            <img src="/웹디자인/sd1.png" alt="">
+                            <img src="/웹디자인/sd2.png" alt="">
+                        </div>
+                        <div class="txt-box flex flex-col">
+                            <div class="txt-box__xl">
+                                <span>GB-SS</span>
+                            </div>
+                            <div class="txt-box__sm">
+                                <span>Single stage & Single driven</span>
+                            </div>
+                        </div>
+                        <div class="btn flex gap-4">
+                            <span>더 보기</span>
+                            <span><i class="fa-solid fa-arrow-pointer"></i></span>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="img-box flex">
+                            <img src="/웹디자인/sd1.png" alt="">
+                            <img src="/웹디자인/sd2.png" alt="">
+                        </div>
+                        <div class="txt-box flex flex-col">
+                            <div class="txt-box__xl">
+                                <span>GB-SD</span>
+                            </div>
+                            <div class="txt-box__sm">
+                                <span>Single stage & Double driven</span>
+                            </div>
+                        </div>
+                        <div class="btn flex gap-4">
+                            <span>더 보기</span>
+                            <span><i class="fa-solid fa-arrow-pointer"></i></span>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="img-box flex">
+                            <img src="/웹디자인/sd1.png" alt="">
+                            <img src="/웹디자인/sd2.png" alt="">
+                        </div>
+                        <div class="txt-box flex flex-col">
+                            <div class="txt-box__xl">
+                                <span>GB-DS</span>
+                            </div>
+                            <div class="txt-box__sm">
+                                <span>Double stage & Single driven</span>
+                            </div>
+                        </div>
+                        <div class="btn flex gap-4">
+                            <span>더 보기</span>
+                            <span><i class="fa-solid fa-arrow-pointer"></i></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-list product-2">
+                <div class="title flex flex-col justify-center items-center" data-aos="fade-up"
+                    data-aos-duration="1000">
+                    <span class="en">SPECIAL SERIES</span>
+                    <span class="ko">가스부스터 스페셜 시리즈</span>
+                </div>
+                <div class="product-2__section grid grid-cols-3 gap-4">
+                    <div>
+                        <div class="img-box flex">
+                            <img src="/웹디자인/dd1.png" alt="">
+                            <img src="/웹디자인/dd2.png" alt="">
+                        </div>
+                        <div class="txt-box flex flex-col">
+                            <div class="txt-box__xl">
+                                <span>GB-DS-7/160</span>
+                            </div>
+                            <div class="txt-box__sm">
+                                <span>Double stage & Single driven</span>
+                            </div>
+                        </div>
+                        <div class="btn flex gap-4">
+                            <span>더 보기</span>
+                            <span><i class="fa-solid fa-arrow-pointer"></i></span>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="img-box flex">
+                            <img src="/웹디자인/ds1.png" alt="">
+                            <img src="/웹디자인/ds2.png" alt="">
+                        </div>
+                        <div class="txt-box flex flex-col">
+                            <div class="txt-box__xl">
+                                <span>GB-QS-7/200</span>
+                            </div>
+                            <div class="txt-box__sm">
+                                <span>Four stage & Single driven</span>
+                            </div>
+                        </div>
+                        <div class="btn flex gap-4">
+                            <span>더 보기</span>
+                            <span><i class="fa-solid fa-arrow-pointer"></i></span>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="img-box flex">
+                            <img src="/웹디자인/sd1.png" alt="">
+                            <img src="/웹디자인/sd2.png" alt="">
+                        </div>
+                        <div class="txt-box flex flex-col">
+                            <div class="txt-box__xl">
+                                <span>다단 부스터</span>
+                            </div>
+                            <div class="txt-box__sm">
+                                <span>Multi-stage booster</span>
+                            </div>
+                        </div>
+                        <div class="btn flex gap-4">
+                            <span>더 보기</span>
+                            <span><i class="fa-solid fa-arrow-pointer"></i></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="line">
+            </div>
+
+            <footer>
+                <div class="img-box flex justify-center items-center gap-6">
+                    <img src="" alt="네이버">
+                    <img src="" alt="유튜브">
+                </div>
+                <div class="txt-box flex flex-col items-center">
+                    <div class="txt-1 flex gap-6">
+                        <span>(주)펌스터</span>
+                        <span>대전광역시 대덕구 대화로 106번길 140 펌스터 2층</span>
+                        <span>pumster@pumster.com</span>
+                        <span class="point">개인정보처리방침</span>
+                        <div class="btn flex gap-2">
+                            <span>패밀리 사이트</span>
+                            <span>
+                                <i class="fa-solid fa-angle-up"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="txt-2">
+                        <span>
+                            COPYRIGHT 2023 PUMSTER, ALL RIGHTS RESERVED
+                        </span>
+                    </div>
+                </div>
+            </footer>
+
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>
