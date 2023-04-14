@@ -232,14 +232,14 @@ section.top .title strong {
   cursor: pointer;
   background-color: #e8f0fa;
   border-radius: 20px;
+  overflow: hidden;
 }
 
 .product-list>.product-1__section>div>.img-box>img {
-  background-color: #e8f0fa;
-  border-radius: 20px !important;
+  transition: .3s;
 }
 
-.product-list>.product-1__section>div>.img-box:hover {
+.product-list>.product-1__section>div>.img-box:hover>img {
   transform: translatex(-100%);
 }
 
@@ -308,14 +308,14 @@ section.top .title strong {
   transition: .3s;
   cursor: pointer;
   border-radius: 20px;
+  background-color: #e8f0fa;
 }
 
 .product-list>.product-2__section>div>.img-box>img {
-  background-color: #e8f0fa;
-  border-radius: 20px;
+  transition: .3s;
 }
 
-.product-list>.product-2__section>div>.img-box:hover {
+.product-list>.product-2__section>div>.img-box:hover>img {
   transform: translatex(-100%);
 }
 
@@ -372,7 +372,7 @@ section.top .title strong {
   margin: 120px 0 0 0;
 }
 
-footer{
+footer {
   padding: 60px 0;
 }
 
@@ -383,7 +383,7 @@ footer .txt-box .txt-1 {
   margin: 10px 0;
 }
 
-footer .txt-box .txt-1 span{
+footer .txt-box .txt-1 span {
   color: #575757;
 }
 
@@ -398,10 +398,10 @@ footer .txt-box .txt-1 .btn {
   background-color: #d8d8d8;
 }
 
-footer .txt-box .txt-1 .btn span{
-  color:#191919;
+footer .txt-box .txt-1 .btn span {
+  color: #191919;
 }
 
-footer .txt-box .txt-2 span{
+footer .txt-box .txt-2 span {
   color: #575757;
 }
